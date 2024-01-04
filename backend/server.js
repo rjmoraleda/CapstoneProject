@@ -20,15 +20,15 @@ import commentRoutes from "./routes/commentRoutes.js";
 dotenv.config();
 connectDB();
 const app = express();
-// // const cors = require('cors');
-// app.use(cors(
-//    {
-//       origin: ["https://deploy-mern-1whq.vercel.app"],
-//       methods: ["POST", "GET"],
-//       credentials: true
-//    }
+// const cors = require('cors');
+app.use(cors(
+   {
+      origin: ["https://deploy-mern-1whq.vercel.app"],
+      methods: ["POST", "GET"],
+      credentials: true
+   }
 
-// ));
+));
 
 // Cloudinary
 const App = () => {
